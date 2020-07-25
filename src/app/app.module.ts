@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CvDetailsComponent } from './cv-details/cv-details.component';
 import { ErrorComponent } from './error/error.component';
+import { AddCvComponent } from './add-cv/add-cv.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { ErrorComponent } from './error/error.component';
     HeaderComponent,
     WelcomeComponent,
     CvDetailsComponent,
-    ErrorComponent
+    ErrorComponent,
+    AddCvComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

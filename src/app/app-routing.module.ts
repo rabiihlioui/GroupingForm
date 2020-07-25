@@ -6,6 +6,7 @@ import { CvComponent } from './cv/cv.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CvDetailsComponent } from './cv-details/cv-details.component';
 import { ErrorComponent } from './error/error.component';
+import { AddCvComponent } from './add-cv/add-cv.component';
 
 const routes: Routes = [
   { 
@@ -20,7 +21,8 @@ const routes: Routes = [
         children: [
           { path: ':id/cvDetails', component: CvDetailsComponent }
         ]
-      } 
+      },
+      { path: 'addCv', component: AddCvComponent }
     ] 
   },
   { path: '**' , component:ErrorComponent }

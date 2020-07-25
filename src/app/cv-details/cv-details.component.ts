@@ -40,10 +40,6 @@ export class CvDetailsComponent implements OnInit {
         this.pers = cv;
       }
     });
-    // const cv = this.cvService.getCvDetails(this.id);
-    // console.log('this.id = ' + this.id)
-    // console.log('cv = ' + cv);
-    // return cv;
   }
 
 }

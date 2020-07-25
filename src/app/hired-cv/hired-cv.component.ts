@@ -22,7 +22,6 @@ export class HiredCvComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(){
-    console.log(this.cvs)
     this.cvs = this.hiringService.getHiredCvs()
   }
 

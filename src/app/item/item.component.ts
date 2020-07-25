@@ -46,17 +46,10 @@ export class ItemComponent implements OnInit {
   }
 
   initiatePers() {
-    if (this.itemId == 1) {
-      this.pers = this.retrievePersById(1)
-    }
-    else if (this.itemId == 2) {
-      this.pers = this.retrievePersById(2)
-    }
-    else if (this.itemId == 3){
-      this.pers = this.retrievePersById(3)
-    }
-    else {
-      this.pers = this.retrievePersById(4)
+    for (let i = 1; i < this.cvService.cvList.length; i++) {
+      if (this.itemId == i) {
+        this.pers = this.retrievePersById(i)
+      }
     }
   }
 
